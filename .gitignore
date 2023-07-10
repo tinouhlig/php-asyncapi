@@ -30,6 +30,8 @@
 !bin/console
 !bin/symfony_requirements
 /vendor/
+/composer.lock
+/.phpunit.result.cache
 
 # Assets and user uploads
 /web/bundles/

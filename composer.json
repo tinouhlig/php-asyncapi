@@ -1,0 +1,30 @@
+{
+    "name": "tinouhlig/php-asyncapi",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tino Uhlig"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TinoUhlig\\AsyncApiBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TinoUhlig\\AsyncApiBundle\\Tests\\": "tests/",
+            "TinoUhlig\\AsyncApiBundle\\Example\\": "example/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "symfony/framework-bundle": "^6.3",
+        "symfony/console": "^6.3",
+        "symfony/yaml": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}

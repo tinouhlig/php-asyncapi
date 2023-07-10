@@ -1,0 +1,9 @@
+async_api:
+    documentation:
+        defaultContentType: 'application/json'
+        id: 'urn:playground'
+        info:
+            title: 'playground'
+            version: '1.0.0'
+            description: 'This is my personal Playground'
+            termsOfService: 'No Service available'

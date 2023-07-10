@@ -1,0 +1,18 @@
+parameters:
+    asyncapi.version: '2.6.0'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    TinoUhlig\AsyncApiBundle\:
+        resource: '../src/'
+
+    TinoUhlig\AsyncApiBundle\Service\MessageCollection:
+        arguments:
+            $messages: !tagged_iterator async_api.messages
+
+    TinoUhlig\AsyncApiBundle\Service\Factory\AsyncApiFactory:
+        arguments:
+            $version: '%asyncapi.version%'
